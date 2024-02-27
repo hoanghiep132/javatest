@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-svc
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://35.186.150.248:3308/abcxyz?useSSL=false&serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+    username: abcxyz
+    password: abcxyz
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
